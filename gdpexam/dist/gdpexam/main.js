@@ -257,7 +257,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form #formpart1=\"ngForm\" (ngSubmit)=\"signin(formpart1)\">\n  <div class=\"form-group row\">\n    <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Make</label>\n    <div class=\"col-sm-10\">\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Enter Make\" ngModel name=\"Make\">\n    </div>\n  </div>\n\n\n  <form>\n    <div class=\"form-row align-items-center\">\n      <div class=\"col-auto my-1\">\n        <label class=\"mr-sm-2\" for=\"inlineFormCustomSelect\">Model</label>\n        <select class=\"custom-select mr-sm-2\" id=\"inlineFormCustomSelect\">\n          <option selected>Civic</option>\n          <option value=\"1\">Odyssey</option>\n          <option value=\"2\">Pilot</option>\n          <option value=\"3\">Accord</option>\n        </select>\n      </div>\n    </div>\n  </form>\n  <div class=\"form-group row\">\n    <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Year</label>\n    <div class=\"col-sm-5\">\n      <input type=\"number\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Year\" ngModel name=\"Year\">\n    </div>\n  </div>\n\n  <fieldset class=\"form-group\">\n    <div class=\"row\">\n      <legend class=\"col-form-label col-sm-2 pt-0\">Type</legend>\n      <div class=\"col-sm-10\">\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"gridRadios1\" value=\"Sedan\" ngModel checked>\n          <label class=\"form-check-label\" for=\"gridRadios1\">\n            Sedan\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"gridRadios2\" value=\"Coupe\" ngModel>\n          <label class=\"form-check-label\" for=\"gridRadios2\">\n            Coupe\n          </label>\n        </div>\n      \n      </div>\n    </div>\n  </fieldset>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">next</button>\n    </div>\n  </div>\n</form>"
+module.exports = "<form #formpart1=\"ngForm\" (ngSubmit)=\"signin(formpart1)\">\n  <div class=\"form-group row\">\n    <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Make</label>\n    <div class=\"col-sm-10\">\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Enter Make\" ngModel name=\"Make\">\n    </div>\n  </div>\n    <div class=\"form-row align-items-center\">\n      <div class=\"col-auto my-1\">\n        <label class=\"mr-sm-2\" for=\"inlineFormCustomSelect\">Model</label>\n        <select class=\"custom-select mr-sm-2\" id=\"inlineFormCustomSelect\" ngModel name=\"Model\">\n          <option selected>Civic</option>\n          <option value=\"1\">Odyssey</option>\n          <option value=\"2\">Pilot</option>\n          <option value=\"3\">Accord</option>\n        </select>\n      </div>\n    </div>\n  <div class=\"form-group row\">\n    <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Year</label>\n    <div class=\"col-sm-5\">\n      <input type=\"number\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Year\" ngModel name=\"Year\">\n    </div>\n  </div>\n\n  <fieldset class=\"form-group\">\n    <div class=\"row\">\n      <legend class=\"col-form-label col-sm-2 pt-0\">Type</legend>\n      <div class=\"col-sm-10\">\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"Type\" id=\"gridRadios1\" value=\"Sedan\" ngModel checked>\n          <label class=\"form-check-label\" for=\"gridRadios1\">\n            Sedan\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"Type\" id=\"gridRadios2\" value=\"Coupe\" ngModel>\n          <label class=\"form-check-label\" for=\"gridRadios2\">\n            Coupe\n          </label>\n        </div>\n      \n      </div>\n    </div>\n  </fieldset>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">next</button>\n    </div>\n  </div>\n</form>"
 
 /***/ }),
 
@@ -330,7 +330,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form #formpart2=\"ngForm\" (ngSubmit)=\"signin(formpart2)\">\n  \n  <fieldset>\n    <legend>Features</legend>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"GPS\" name=\"Features\" value=\"GPS\">\n      <label for=\"GPS\">GPS</label>\n    </div>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"SecurityLock\" name=\"Features\" value=\"SecurityLock\">\n      <label for=\"SecurityLock\">Security Lock</label>\n    </div>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"CargoMat\" name=\"Features\" value=\"CargoMat\">\n      <label for=\"CargoMat\">CargoMat</label>\n    </div>\n  </fieldset>\n  \n  <div class=\"form-group row\">\n    <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Purchase Date</label>\n    <div class=\"col-sm-5\">\n      <input type=\"date\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"PurchaseDate\" ngModel name=\"PurchaseDate \">\n    </div>\n  </div>\n  \n\n  \n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </div>\n  </div>\n  \n</form>"
+module.exports = "<form #formpart2=\"ngForm\" (ngSubmit)=\"signin(formpart2)\">\n  \n  <fieldset>\n    <legend>Features</legend>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"GPS\" name=\"GPS\" value=\"GPS\" ngModel>\n      <label for=\"GPS\">GPS</label>\n    </div>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"SecurityLock\" name=\"SecurityLock\" value=\"SecurityLock\" ngModel>\n      <label for=\"SecurityLock\">Security Lock</label>\n    </div>\n    <div class=\"col-sm-5\">\n      <input type=\"checkbox\" id=\"CargoMat\" name=\"CargoMat\" value=\"CargoMat\" ngModel>\n      <label for=\"CargoMat\">CargoMat</label>\n    </div>\n  </fieldset>\n  \n  <div class=\"form-group row\">\n    <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Purchase Date</label>\n    <div class=\"col-sm-5\">\n      <input type=\"date\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"PurchaseDate\" ngModel name=\"PurchaseDate\">\n    </div>\n  </div>\n  \n\n  \n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </div>\n  </div>\n  \n</form>"
 
 /***/ }),
 
@@ -377,6 +377,16 @@ var Page2Component = /** @class */ (function () {
     Page2Component.prototype.signin = function (form) {
         var _this = this;
         var formpart1 = this.http.getForm();
+        form.value['features'] = [];
+        var features = ['GPS', "SecurityLock", "CargoMat"];
+        for (var _i = 0, features_1 = features; _i < features_1.length; _i++) {
+            var ele = features_1[_i];
+            if (form.value[ele]) {
+                console.log(ele);
+                form.value['features'].push(ele);
+                console.log(form.value['features']);
+            }
+        }
         this.http.setForm(__assign({}, formpart1, form.value));
         this.http.postService().subscribe(function (res) {
             console.log(res);
@@ -418,7 +428,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "The user selected the following input:  \n  \n  <ul>\n    <li>{{ formData.Make }}  {{ formData.Model }}  {{ formData.Year }}  {{ formData.type}}</li>\n    <li>with {{formData.Features }}</li>\n    <li>accessories on {{formData.PurchaseDate }}</li>\n  </ul>"
+module.exports = "The user selected the following input:  \n  <ul>\n    <li>{{ formData.Make }}  {{ formData.Model }}  {{ formData.Year }}  {{ formData.type}}</li>\n    <li>with {{formData.features }}</li>\n    <li>accessories on {{formData.PurchaseDate}}</li>\n  </ul>"
 
 /***/ }),
 

@@ -16,6 +16,16 @@ export class Page2Component implements OnInit {
 
   signin(form){
       var formpart1 = this.http.getForm()
+      form.value['features'] = []
+      var features = ['GPS',"SecurityLock","CargoMat"]
+      for(var ele of features){
+          if(form.value[ele]){
+            console.log(ele)
+            form.value['features'].push(ele)
+            console.log(form.value['features'])
+          }
+      }
+
       this.http.setForm({...formpart1,...form.value})
       this.http.postService().subscribe(
         res => {
@@ -26,6 +36,7 @@ export class Page2Component implements OnInit {
             console.log(err)
         }
       )
+      
       
   }
 
