@@ -12,6 +12,7 @@ export class Page2Component implements OnInit {
   constructor(private router:Router,private http:HttpService) { }
 
   ngOnInit() {
+    
   }
 
   signin(form){
