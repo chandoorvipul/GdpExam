@@ -3,8 +3,8 @@ var gdpSchema = mongoose.Schema({
     Make : String,
     Model : String,
     Year : String,
-    type : String,
-    Features : String,
+    Type : String,
+    features : [String],
     PurchaseDate : Date
    });
    module.exports = mongoose.model('Consumer', gdpSchema);
