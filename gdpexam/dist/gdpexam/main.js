@@ -378,9 +378,8 @@ var Page2Component = /** @class */ (function () {
         var _this = this;
         var formpart1 = this.http.getForm();
         form.value['features'] = [];
-        var features = ['GPS', "SecurityLock", "CargoMat"];
-        for (var _i = 0, features_1 = features; _i < features_1.length; _i++) {
-            var ele = features_1[_i];
+        for (var _i = 0, _a = ['GPS', "SecurityLock", "CargoMat"]; _i < _a.length; _i++) {
+            var ele = _a[_i];
             if (form.value[ele]) {
                 console.log(ele);
                 form.value['features'].push(ele);
@@ -458,9 +457,14 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var PagereviewComponent = /** @class */ (function () {
     function PagereviewComponent(http) {
         this.http = http;
+        this.formData = {};
+        this.discount = 0;
     }
     PagereviewComponent.prototype.ngOnInit = function () {
         this.formData = this.http.getForm();
+        var date = new Date(this.formData['purchaseDate']);
+        console.log(date.getDate() % 2);
+        this.discount = date.getDate() % 2 == 0 ? 30 : 40;
         console.log(this.formData);
     };
     PagereviewComponent = __decorate([

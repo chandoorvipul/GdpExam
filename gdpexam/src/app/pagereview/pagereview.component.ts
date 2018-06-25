@@ -9,13 +9,16 @@ import { HttpService } from "src/app/http.service";
 })
 export class PagereviewComponent implements OnInit {
 
-  formData: {};
+  formData = {}
+  discount = 0
 
   constructor(private http:HttpService) { }
 
-  ngOnInit() {
+   ngOnInit() {
     this.formData = this.http.getForm()
+    var date = new Date(this.formData['purchaseDate']);
+    console.log(date.getDate() % 2);
+    this.discount = date.getDate() % 2 == 0 ? 30 : 40
     console.log(this.formData)
   }
-
 }
