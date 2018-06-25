@@ -465,7 +465,7 @@ var PagereviewComponent = /** @class */ (function () {
         this.formData = this.http.getForm();
         var date = new Date(this.formData['PurchaseDate']);
         console.log(date.getUTCDate());
-        this.discount = date.getUTCDate() % 2 === 0 ? 30 : 40;
+        this.discount = date.getUTCDate() % 2 === 0 ? 40 : 30;
         console.log(this.formData);
     };
     PagereviewComponent = __decorate([
