@@ -16,9 +16,9 @@ export class PagereviewComponent implements OnInit {
 
    ngOnInit() {
     this.formData = this.http.getForm()
-    var date = new Date(this.formData['purchaseDate']);
-    console.log(date.getDate() % 2);
-    this.discount = date.getDate() % 2 == 0 ? 30 : 40
+    var date = new Date(this.formData['PurchaseDate']);
+    console.log(date.getUTCDate());  
+    this.discount = date.getUTCDate() % 2 === 0 ? 30 : 40
     console.log(this.formData)
   }
 }

@@ -1,34 +1,31 @@
 <form #formpart2="ngForm" (ngSubmit)="signin(formpart2)">
-  
-  <fieldset>
-    <legend>Features</legend>
-    <div class="col-sm-10">
-      <input type="checkbox" id="GPS" name="GPS" value="GPS" ngModel>
-      <label for="GPS">GPS</label>
-    </div>
-    <div class="col-sm-10">
-      <input type="checkbox" id="SecurityLock" name="SecurityLock" value="SecurityLock" ngModel>
-      <label for="SecurityLock">Security Lock</label>
-    </div>
-    <div class="col-sm-10">
-      <input type="checkbox" id="CargoMat" name="CargoMat" value="CargoMat" ngModel>
-      <label for="CargoMat">CargoMat</label>
-    </div>
-  </fieldset>
-  
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-5 col-form-label">Purchase Date</label>
-    <div class="col-sm-10">
+
+  <div class="form-group col-sm-12 row">
+      <legend class="col-form-label col-sm-2">Features</legend>
+
+      <div class="col-sm-2">
+        <input type="checkbox" id="GPS" name="GPS" value="GPS" ngModel class="col-sm-3">
+        <label for="GPS" class="col-form-label col-sm-9">GPS</label>
+      </div>
+
+      <div class="col-sm-5">
+        <input type="checkbox" id="SecurityLock" name="SecurityLock" value="SecurityLock" class="col-sm-2" ngModel>
+        <label for="SecurityLock" class="col-form-label col-sm-10">Security Lock</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="checkbox" id="CargoMat" name="CargoMat" value="CargoMat" ngModel class="col-sm-2">
+        <label for="CargoMat" class="col-form-label col-sm-10">CargoMat</label>
+      </div>
+    
+  </div>
+   
+  <div class="form-group row col-sm-12">
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Purchase Date</label>
+    <div class="col-sm-6">
       <input type="date" class="form-control" id="inputEmail3" placeholder="PurchaseDate" ngModel name="PurchaseDate">
     </div>
   </div>
   
-
-  
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </div>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
   
 </form>

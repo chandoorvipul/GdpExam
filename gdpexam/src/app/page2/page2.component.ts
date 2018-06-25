@@ -25,7 +25,7 @@ export class Page2Component implements OnInit {
             console.log(form.value['features'])
           }
       }
-
+      this.router.navigateByUrl('/feedback')
       this.http.setForm( { ...formpart1, ...form.value } )
       this.http.postService().subscribe(
         res => {
