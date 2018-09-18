@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.1.1 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\n"
 
 /***/ }),
 
@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\S530459\Desktop\gdpexam\gdpexam\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\S530459\Desktop\gdpexam\gdpexam\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })
