@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! C:\Users\S530711\Desktop\GdpExam-1\gdpexam\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\GdpExam-1\gdpexam\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })

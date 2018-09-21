@@ -16,6 +16,15 @@ export class Page1Component implements OnInit {
 
   signin(form){
     this.http.setForm(form.value)
+    console.log(Object.keys(form.value))
+      for(let val of Object.keys(form.value)){
+        console.log(val)
+        if(form.value[''+val+''].length === 0){
+          window.alert("enter all required fields")
+          return;
+        }
+      }
+
     this.router.navigateByUrl('/part2')
   }
 
