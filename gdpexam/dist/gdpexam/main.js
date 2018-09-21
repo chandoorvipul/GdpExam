@@ -295,6 +295,15 @@ var Page1Component = /** @class */ (function () {
     };
     Page1Component.prototype.signin = function (form) {
         this.http.setForm(form.value);
+        console.log(Object.keys(form.value));
+        for (var _i = 0, _a = Object.keys(form.value); _i < _a.length; _i++) {
+            var val = _a[_i];
+            console.log(val);
+            if (form.value['' + val + ''].length === 0) {
+                window.alert("enter all required fields");
+                return;
+            }
+        }
         this.router.navigateByUrl('/part2');
     };
     Page1Component = __decorate([
@@ -543,7 +552,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\GdpExam-1\gdpexam\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -5473,7 +5473,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\New folder\GdpExam\gdpexam\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\S530711\Desktop\GdpExam-1\gdpexam\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
